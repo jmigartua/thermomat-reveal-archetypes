@@ -1,0 +1,47 @@
+# 00-standard.yml — Quarto-default flavored (corrected)
+meta:
+  name: "Thermomat Standard"
+  description: "Minimal, high-contrast skin aligned with Quarto defaults."
+
+logo:
+  small: images/logo-small.svg
+  medium: images/logo-medium.svg
+  large: images/logo-large.svg
+
+color:
+  palette:
+    ink: "#111111"
+    paper: "#ffffff"
+    muted: "#666666"
+    gray-1: "#f5f5f5"
+  foreground: ink
+  background: paper
+  primary: ink
+  secondary: muted
+
+typography:
+  fonts:
+    - family: "Source Sans Pro"
+      source: google
+    - family: "Source Code Pro"
+      source: google
+  base:
+    family: "Source Sans Pro"
+    size: 34px
+    line-height: 1.35
+  headings:
+    family: "Source Sans Pro"
+    weight: 800
+    color: ink
+  monospace:
+    family: "Source Code Pro"
+    size: 0.9em
+  link:
+    color: ink
+    decoration: underline
+
+defaults:
+  bootstrap:
+    body-bg: paper
+    body-color: ink
+    link-color: ink

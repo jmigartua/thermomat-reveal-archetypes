@@ -1,0 +1,66 @@
+
+/* ehu-fonts-otf.css — loads OTF versions of UPV/EHU fonts
+   Place this file in your project and reference it in _quarto.yml or the deck header:
+   format: 
+     revealjs:
+       css: thermomat/ehu/styles/ehu-fonts-otf.css
+*/
+
+/* EHUSans (Castellano-first brand) */
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHUSans-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHUSans-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHUSans-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHUSans-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHUSans-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHUSans-black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Optional: EHUSerif blocks go here once you have the files.
+@font-face {
+  font-family: "EHUSerif";
+  src: url("../fonts/EHUSerif-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+... add Bold, Italic, etc. ...
+*/
+
+/* Language helpers (same as the original CSS) */
+.eu { font-family: "EHUSerif", Georgia, "Times New Roman", serif; letter-spacing: 0; }
+.es { font-family: "EHUSans",  -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; letter-spacing: -0.025em; }

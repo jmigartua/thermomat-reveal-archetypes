@@ -1,0 +1,44 @@
+# 02-es.yml — UPV/EHU Spanish-first (EHUSans) — corrected
+meta:
+  name: "UPV/EHU — ES (Spanish-first)"
+  description: "Headings & body in EHUSans; Basque segments styled with .eu (EHUSerif)."
+
+logo:
+  small: images/logo-small.svg
+  medium: images/logo-medium.svg
+  large: images/logo-large.svg
+
+color:
+  palette:
+    ink: "#111111"
+    paper: "#ffffff"
+    gray-1: "#f5f5f5"
+    gray-2: "#e6e6e6"
+  foreground: ink
+  background: paper
+  primary: ink
+
+typography:
+  fonts:
+    - family: "EHUSans"
+    - family: "EHUSerif"
+  base:
+    family: "EHUSans"
+    size: 34px
+    line-height: 1.35
+  headings:
+    family: "EHUSans"
+    weight: 800
+    color: ink
+  monospace:
+    family: "JetBrains Mono"
+    size: 0.9em
+  link:
+    color: ink
+    decoration: underline
+
+defaults:
+  bootstrap:
+    body-bg: paper
+    body-color: ink
+    link-color: ink

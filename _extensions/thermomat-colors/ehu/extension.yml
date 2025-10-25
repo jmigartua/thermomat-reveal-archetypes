@@ -1,0 +1,21 @@
+title: "Thermomat Brand Pack (with inline color utilities)"
+author: "Thermomat / UPV-EHU"
+version: 0.1.2
+quarto-required: ">=1.6.0"
+contributes:
+  project:
+    resources:
+      - styles/ehu-fonts-mixed.css
+      - styles/brand-inline-utilities.css
+      - images/logo-small.svg
+      - images/logo-medium.svg
+      - images/logo-large.svg
+      - fonts/
+  formats:
+    revealjs:
+      css: 
+        - thermomat/ehu/styles/ehu-fonts-mixed.css
+        - thermomat/ehu/styles/brand-inline-utilities.css
+    html:
+      css:
+        - thermomat/ehu/styles/brand-inline-utilities.css

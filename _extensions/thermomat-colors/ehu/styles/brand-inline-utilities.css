@@ -1,0 +1,44 @@
+
+/* styles/brand-inline-utilities.css
+   Exposes semantic color tokens as CSS custom properties and inline helpers.
+*/
+
+:root{
+  /* Semantic tokens (from brand color palette) */
+  --col-coral:      #FE8B66;
+  --col-green:      #00D88C;
+  --col-mint:       #84FBBF;
+  --col-periwinkle: #7E8EFE;
+  --col-chartreuse: #E3F568;
+  --col-lavender:   #C6ACF5;
+  --col-tag-gray:   #BBB3A7;
+}
+
+/* Text color helpers (class-based) */
+.coral, .coral *            { color: var(--col-coral) !important; }
+.green, .green *            { color: var(--col-green) !important; }
+.mint, .mint *              { color: var(--col-mint) !important; }
+.periwinkle, .periwinkle *  { color: var(--col-periwinkle) !important; }
+.chartreuse, .chartreuse *  { color: var(--col-chartreuse) !important; }
+.lavender, .lavender *      { color: var(--col-lavender) !important; }
+.tag-gray, .tag-gray *      { color: var(--col-tag-gray) !important; }
+
+/* Background helpers */
+.bg-coral       { background-color: var(--col-coral) !important; color: #000; }
+.bg-green       { background-color: var(--col-green) !important; color: #000; }
+.bg-mint        { background-color: var(--col-mint) !important; color: #000; }
+.bg-periwinkle  { background-color: var(--col-periwinkle) !important; color: #000; }
+.bg-chartreuse  { background-color: var(--col-chartreuse) !important; color: #000; }
+.bg-lavender    { background-color: var(--col-lavender) !important; color: #000; }
+.bg-tag-gray    { background-color: var(--col-tag-gray) !important; color: #000; }
+
+/* Highlighter-style underline */
+.hl-coral { background-image: linear-gradient(transparent 62%, var(--col-coral) 0); }
+.hl-green { background-image: linear-gradient(transparent 62%, var(--col-green) 0); }
+.hl-mint  { background-image: linear-gradient(transparent 62%, var(--col-mint) 0); }
+.hl-periwinkle { background-image: linear-gradient(transparent 62%, var(--col-periwinkle) 0); }
+.hl-chartreuse { background-image: linear-gradient(transparent 62%, var(--col-chartreuse) 0); }
+.hl-lavender   { background-image: linear-gradient(transparent 62%, var(--col-lavender) 0); }
+
+/* Chip utility */
+.chip { display:inline-block; padding:.1em .5em; border-radius:.25rem; }

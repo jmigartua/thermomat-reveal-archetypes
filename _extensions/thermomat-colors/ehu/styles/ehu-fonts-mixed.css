@@ -1,0 +1,109 @@
+
+/* styles/ehu-fonts-mixed.css — prefers WOFF2 with OTF fallback for nested folders:
+   _extensions/thermomat/ehu/fonts/EHU_Sans/
+   _extensions/thermomat/ehu/fonts/EHU_Serif/
+*/
+
+/* EHUSans */
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHU_Sans/EHUSans-Light.woff2") format("woff2"),
+       url("../fonts/EHU_Sans/EHUSans-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHU_Sans/EHUSans-Regular.woff2") format("woff2"),
+       url("../fonts/EHU_Sans/EHUSans-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHU_Sans/EHUSans-Italic.woff2") format("woff2"),
+       url("../fonts/EHU_Sans/EHUSans-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHU_Sans/EHUSans-Bold.woff2") format("woff2"),
+       url("../fonts/EHU_Sans/EHUSans-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHU_Sans/EHUSans-BoldItalic.woff2") format("woff2"),
+       url("../fonts/EHU_Sans/EHUSans-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHU_Sans/EHUSans-black.woff2") format("woff2"),
+       url("../fonts/EHU_Sans/EHUSans-black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* EHUSerif (effective once files are present) */
+@font-face {
+  font-family: "EHUSerif";
+  src: url("../fonts/EHU_Serif/EHUSerif-Light.woff2") format("woff2"),
+       url("../fonts/EHU_Serif/EHUSerif-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSerif";
+  src: url("../fonts/EHU_Serif/EHUSerif-Regular.woff2") format("woff2"),
+       url("../fonts/EHU_Serif/EHUSerif-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSerif";
+  src: url("../fonts/EHU_Serif/EHUSerif-Italic.woff2") format("woff2"),
+       url("../fonts/EHU_Serif/EHUSerif-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSerif";
+  src: url("../fonts/EHU_Serif/EHUSerif-Bold.woff2") format("woff2"),
+       url("../fonts/EHU_Serif/EHUSerif-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSerif";
+  src: url("../fonts/EHU_Serif/EHUSerif-BoldItalic.woff2") format("woff2"),
+       url("../fonts/EHU_Serif/EHUSerif-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSerif";
+  src: url("../fonts/EHU_Serif/EHUSerif-Black.woff2") format("woff2"),
+       url("../fonts/EHU_Serif/EHUSerif-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Language helpers */
+.eu { font-family: "EHUSerif", Georgia, "Times New Roman", serif; letter-spacing: 0; }
+.es { font-family: "EHUSans",  -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; letter-spacing: -0.025em; }

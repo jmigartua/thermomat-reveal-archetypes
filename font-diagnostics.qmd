@@ -1,0 +1,128 @@
+---
+title: "UPV/EHU Font Diagnostics"
+subtitle: "EHUSans / EHUSerif — visual matrix and computed checks"
+brand: _extensions/thermomat/ehu/02-es.yml   # swap to thermomat/ehu/02-eu if you prefer
+format:
+  revealjs:
+    css: _extensions/thermomat/ehu/styles/ehu-fonts-mixed.css
+    transition: none
+    slide-number: true
+---
+
+## Visual matrix (Sans & Serif)
+
+<style>
+  .sample { margin: .25rem 0 .9rem 0; }
+  .label { color:#666; font-size:.8em; display:block; margin-bottom:.1rem; }
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .small-muted{ color:#666; font-size:.8em; }
+</style>
+
+<div class="grid">
+
+<div>
+  ### EHUSans (ES-first) {.es}
+
+  <span class="label">Light — 300</span>
+  <p class="sample es" style="font-weight:300">Benjamín pidió una bebida de kiwi y fresa; Noé, sin vergüenza, la más exquisita chufa.</p>
+
+  <span class="label">Regular — 400</span>
+  <p class="sample es" style="font-weight:400">Benjamín pidió una bebida de kiwi y fresa; Noé, sin vergüenza, la más exquisita chufa.</p>
+
+  <span class="label">Italic — 400 italic</span>
+  <p class="sample es" style="font-weight:400; font-style:italic">Benjamín pidió una bebida de kiwi y fresa; Noé, sin vergüenza, la más exquisita chufa.</p>
+
+  <span class="label">Bold — 700</span>
+  <p class="sample es" style="font-weight:700">Benjamín pidió una bebida de kiwi y fresa; Noé, sin vergüenza, la más exquisita chufa.</p>
+
+  <span class="label">Bold Italic — 700 italic</span>
+  <p class="sample es" style="font-weight:700; font-style:italic">Benjamín pidió una bebida de kiwi y fresa; Noé, sin vergüenza, la más exquisita chufa.</p>
+
+  <span class="label">Black — 900</span>
+  <p class="sample es" style="font-weight:900">Benjamín pidió una bebida de kiwi y fresa; Noé, sin vergüenza, la más exquisita chufa.</p>
+</div>
+
+<div>
+  ### EHUSerif (EU-first) {.eu}
+
+  <span class="label">Light — 300</span>
+  <p class="sample eu" style="font-weight:300">Zazpi etxez etxe ibili eta zazpiak zazpietan harrapatu zituen ziztuan.</p>
+
+  <span class="label">Regular — 400</span>
+  <p class="sample eu" style="font-weight:400">Zazpi etxez etxe ibili eta zazpiak zazpietan harrapatu zituen ziztuan.</p>
+
+  <span class="label">Italic — 400 italic</span>
+  <p class="sample eu" style="font-weight:400; font-style:italic">Zazpi etxez etxe ibili eta zazpiak zazpietan harrapatu zituen ziztuan.</p>
+
+  <span class="label">Bold — 700</span>
+  <p class="sample eu" style="font-weight:700">Zazpi etxez etxe ibili eta zazpiak zazpietan harrapatu zituen ziztuan.</p>
+
+  <span class="label">Black — 900</span>
+  <p class="sample eu" style="font-weight:900">Zazpi etxez etxe ibili eta zazpiak zazpietan harrapatu zituen ziztuan.</p>
+
+  <p class="small-muted">If EHUSerif files are not present yet, this column will fall back to Georgia/Times until you add them.</p>
+</div>
+
+</div>
+
+---
+
+## Computed diagnostics (optional JS)
+
+> You may delete this slide if you prefer to keep the deck JavaScript-free.  
+> It prints the **computed** `font-family`, `font-weight`, and `font-style` for each probe below.
+
+<style>
+  .probe { margin: .6rem 0 .2rem 0; }
+  .computed { color:#666; font-size:.8em; margin:0 0 .6rem 0; }
+</style>
+
+<div class="probe es" style="font-weight:300">EHUSans — 300 — lorem ES</div>
+<div class="computed"></div>
+
+<div class="probe es" style="font-weight:400">EHUSans — 400 — lorem ES</div>
+<div class="computed"></div>
+
+<div class="probe es" style="font-weight:400; font-style:italic">EHUSans — 400 italic — lorem ES</div>
+<div class="computed"></div>
+
+<div class="probe es" style="font-weight:700">EHUSans — 700 — lorem ES</div>
+<div class="computed"></div>
+
+<div class="probe es" style="font-weight:700; font-style:italic">EHUSans — 700 italic — lorem ES</div>
+<div class="computed"></div>
+
+<div class="probe es" style="font-weight:900">EHUSans — 900 — lorem ES</div>
+<div class="computed"></div>
+
+<div class="probe eu" style="font-weight:300">EHUSerif — 300 — lorem EU</div>
+<div class="computed"></div>
+
+<div class="probe eu" style="font-weight:400">EHUSerif — 400 — lorem EU</div>
+<div class="computed"></div>
+
+<div class="probe eu" style="font-weight:400; font-style:italic">EHUSerif — 400 italic — lorem EU</div>
+<div class="computed"></div>
+
+<div class="probe eu" style="font-weight:700">EHUSerif — 700 — lorem EU</div>
+<div class="computed"></div>
+
+<div class="probe eu" style="font-weight:900">EHUSerif — 900 — lorem EU</div>
+<div class="computed"></div>
+
+```{=html}
+<script>
+(function(){
+  const probes = document.querySelectorAll('.probe');
+  probes.forEach(p => {
+    const cs = getComputedStyle(p);
+    const info = p.nextElementSibling && p.nextElementSibling.classList.contains('computed')
+      ? p.nextElementSibling
+      : document.createElement('div');
+    info.className = 'computed';
+    info.textContent = `Computed → family: ${cs.fontFamily}; weight: ${cs.fontWeight}; style: ${cs.fontStyle}`;
+    if (!info.parentNode) p.after(info);
+  });
+})();
+</script>
+```

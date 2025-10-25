@@ -1,0 +1,33 @@
+/* styles/ehu-fonts.css — load UPV/EHU fonts (place .woff2 into fonts/) */
+@font-face {
+  font-family: "EHUSerif";
+  src: url("../fonts/EHUSerif-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSerif";
+  src: url("../fonts/EHUSerif-Bold.woff2") format("woff2");
+  font-weight: 700 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHUSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EHUSans";
+  src: url("../fonts/EHUSans-Bold.woff2") format("woff2");
+  font-weight: 700 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Language helpers */
+.eu { font-family: "EHUSerif", serif; letter-spacing: 0; }
+.es { font-family: "EHUSans",  sans-serif; letter-spacing: -0.025em; }

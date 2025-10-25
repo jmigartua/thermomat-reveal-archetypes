@@ -1,0 +1,65 @@
+/*-- scss:defaults --*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI",
+                         Roboto, "Helvetica Neue", Arial, "Noto Sans",
+                         "Liberation Sans", sans-serif;
+
+$presentation-font-size-root: 34px;
+$presentation-line-height: 1.35;
+$body-color: #111 !default;
+$link-color: #111 !default;
+$presentation-heading-color: #111 !default;
+
+.reveal { font-family: $font-family-sans-serif; }
+.reveal .slides section h1 { font-weight: 800; letter-spacing: -0.02em; }
+.reveal .slides section h2 { font-weight: 700; letter-spacing: -0.01em; margin-top: 0.2em; }
+.reveal .slides section h3 { font-weight: 600; }
+
+.reveal .slides section p,
+.reveal .slides section li { color: #111; }
+
+.reveal .progress { background: #e6e6e6; height: 6px; }
+.reveal .progress span { background: #111; }
+
+.reveal a { text-decoration: underline; text-underline-offset: 2px; }
+
+/* Utility classes */
+.subtitle { color: #666; margin-top: -0.35em; }
+.tight { line-height: 1.25; }
+
+/* Image placeholders */
+.hero-img, .fig-left, .closing-img {
+  display: block;
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  background: #f0f0f0;
+  border-radius: 12px;
+  margin: 0 auto;
+  box-shadow: 0 0 0 1px #e6e6e6 inset;
+}
+
+/* Card-style rectangles (A3) */
+.callout-card {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin: 0 0 12px 0;
+  border: 1px solid #eeeeee;
+}
+
+/* High-contrast conclusion blocks (A5) */
+.conclusion-block {
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Columns fine-tuning */
+.columns { gap: 1.6rem !important; }
+.column { vertical-align: top; }

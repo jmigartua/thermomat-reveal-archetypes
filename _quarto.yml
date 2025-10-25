@@ -1,0 +1,17 @@
+project:
+  type: default
+extensions:
+  - thermomat-colors/ehu
+#  - thermomat/ehu
+
+format:
+  revealjs:
+    theme: [default, styles.scss]
+    slide-number: true
+    hash: true
+    transition: fade
+    transition-speed: fast
+    background-color: "#ffffff"
+    width: 1600
+    height: 900
+    incremental: false

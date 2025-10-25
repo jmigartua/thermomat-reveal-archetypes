@@ -1,0 +1,54 @@
+# 00-standard.yml — with extended palette tokens
+meta:
+  name: "Thermomat Standard"
+  description: "Includes semantic palette (coral, mint, etc.) and auto-loaded inline color utilities."
+
+logo:
+  small: images/logo-small.svg
+  medium: images/logo-medium.svg
+  large: images/logo-large.svg
+
+color:
+  palette:
+    ink: "#111111"
+    paper: "#ffffff"
+    muted: "#666666"
+    gray-1: "#f5f5f5"
+    gray-2: "#e6e6e6"
+    coral: "#FE8B66"
+    green: "#00D88C"
+    mint: "#84FBBF"
+    periwinkle: "#7E8EFE"
+    chartreuse: "#E3F568"
+    lavender: "#C6ACF5"
+    tag-gray: "#BBB3A7"
+  foreground: ink
+  background: paper
+  primary: ink
+
+typography:
+  fonts:
+    - family: "Source Sans Pro"
+      source: google
+    - family: "JetBrains Mono"
+      source: google
+  base:
+    family: "Source Sans Pro"
+    size: 34px
+    line-height: 1.35
+  headings:
+    family: "Source Sans Pro"
+    weight: 800
+    color: ink
+  monospace:
+    family: "JetBrains Mono"
+    size: 0.9em
+  link:
+    color: ink
+    decoration: underline
+
+defaults:
+  bootstrap:
+    body-bg: paper
+    body-color: ink
+    link-color: ink
